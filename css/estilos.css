@@ -1,0 +1,240 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-size: cover;
+  background-attachment: fixed;
+  background-image: url("../assets/zyro.png");
+}
+
+header .menu {
+  width: 100%;
+}
+header .menu a {
+  font-size: 1.8rem;
+  color: #000;
+  font-weight: bolder;
+}
+header .menu a:hover {
+  font-weight: bolder;
+  background-color: rgba(0, 0, 0, 0.938);
+  color: #fff;
+  border-radius: 25%;
+}
+
+main {
+  background-color: rgba(0, 0, 0, 0.4235294118);
+}
+main .carrusel {
+  grid-area: carrusel;
+  margin: 0px 150px 100px 150px;
+}
+main .principal {
+  grid-area: principal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(223, 223, 223, 0.747);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  margin: 30px 100px 40px 80px;
+  border-radius: 20%;
+}
+main .principal .video-container {
+  flex: 1;
+  margin-left: 250px;
+}
+main .principal .video-container video {
+  border-radius: 25%;
+}
+main .principal .text-container {
+  flex: 1;
+  text-align: center;
+  margin-right: 250px;
+}
+main .principal h2 {
+  color: #000;
+  font-size: 34px;
+  margin-bottom: 10px;
+  font-weight: bolder;
+}
+main .principal p {
+  color: #000;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+main .productos {
+  grid-area: productos;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.4235294118);
+}
+main .productos .card {
+  margin: 30px 10px 20px 20px;
+  background-color: #fdfdfd;
+}
+main .formulario-diseño {
+  flex: 1;
+  background-color: rgba(0, 0, 0, 0.6431372549);
+  max-width: 600px;
+  padding: 100px 40px 100px 40px;
+  margin: 80px 250px 80px 0px;
+  text-align: center;
+}
+main .formulario-diseño .form-label {
+  color: #fff;
+  font-size: 20px;
+  font-weight: bolder;
+}
+main .formulario-diseño h2 {
+  text-align: center;
+  color: #fff;
+  font-size: 45px;
+  margin-bottom: 60px;
+}
+main .video-formulario {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .video-formulario .botones .btn-success {
+  background-color: rgba(32, 117, 245, 0.9254901961) !important;
+  border-color: rgba(0, 50, 124, 0.6784313725) !important;
+}
+main .video-formulario .botones .btn-success:hover {
+  background-color: rgba(0, 50, 124, 0.6784313725) !important;
+  border-color: rgba(0, 50, 124, 0.6784313725) !important;
+}
+main .video-formulario .botones .btn-danger {
+  background-color: rgba(199, 75, 75, 0.8156862745) !important;
+  border-color: #580009 !important;
+}
+main .video-formulario .botones .btn-danger:hover {
+  background-color: #580009 !important;
+  border-color: #580009 !important;
+}
+main .video-formulario .video-sticker {
+  flex: 1;
+}
+main .video-formulario .video-sticker video {
+  height: 600px;
+  width: 450px;
+  border-radius: 15%;
+  margin-left: 250px;
+}
+main .sobrenosotros {
+  background-color: rgba(253, 253, 253, 0.8431372549);
+  padding: 150px 40px 150px 40px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.5rem;
+}
+main .sobrenosotros h1 {
+  padding-bottom: 40px;
+}
+main .contacto {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.705);
+  padding: 180px 90px 180px 90px;
+  text-align: center;
+}
+main .contacto h2 {
+  color: #fdfdfd;
+  font-size: 3rem;
+  padding-bottom: 60px;
+}
+main .contacto .botones .btn-success {
+  background-color: rgba(32, 117, 245, 0.9254901961) !important;
+  border-color: rgba(0, 50, 124, 0.6784313725) !important;
+}
+main .contacto .botones .btn-success:hover {
+  background-color: rgba(0, 50, 124, 0.6784313725) !important;
+  border-color: rgba(0, 50, 124, 0.6784313725) !important;
+}
+main .contacto .botones .btn-danger {
+  background-color: rgba(199, 75, 75, 0.8156862745) !important;
+  border-color: #580009 !important;
+}
+main .contacto .botones .btn-danger:hover {
+  background-color: #580009 !important;
+  border-color: #580009 !important;
+}
+main .stickers {
+  color: #fdfdfd;
+  background-color: rgba(0, 0, 0, 0.7411764706);
+  text-align: center;
+  margin: 0 auto;
+  max-width: 400px;
+}
+
+footer {
+  width: 100%;
+  background-color: rgb(46, 46, 46);
+  padding: 10px;
+  align-self: end;
+}
+footer img {
+  width: 30px;
+  margin: 5px 15px;
+}
+
+@media only screen and (max-width: 767px) {
+  main .carrusel {
+    margin: 0;
+  }
+  main .principal {
+    display: flex;
+    justify-content: center; /* Ajustar contenido horizontalmente */
+    align-items: center; /* Ajustar contenido verticalmente */
+    flex-wrap: nowrap;
+    margin: 30px 20px 40px 20px;
+    border-radius: 5%;
+    flex-direction: column-reverse;
+  }
+  main .principal .video-container {
+    margin: 0 auto;
+  }
+  main .principal .video-container video {
+    width: 250px;
+  }
+  main .principal .text-container {
+    margin: auto;
+  }
+  main .principal .text-container h2 {
+    font-size: 28px;
+  }
+  main .principal .text-container p {
+    font-size: 16px;
+  }
+  main .productos {
+    display: flex;
+    justify-content: center; /* Ajustar contenido horizontalmente */
+    align-items: center; /* Ajustar contenido verticalmente */
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+  main .video-formulario {
+    display: flex;
+    justify-content: center; /* Ajustar contenido horizontalmente */
+    align-items: center; /* Ajustar contenido verticalmente */
+    flex-wrap: nowrap;
+    flex-direction: column-reverse;
+  }
+  main .video-formulario .formulario-diseño {
+    margin: 0 auto;
+    width: 100%;
+  }
+  main .video-formulario .video-sticker video {
+    width: 350px;
+    border-radius: 15%;
+    margin: 0;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */

@@ -1,0 +1,13 @@
+@import "variables";
+
+footer {
+  width: 100%;
+  background-color: $footer-bg-color;
+  padding: 10px;
+  align-self: end;
+
+  img {
+    width: 30px;
+    margin: 5px 15px;
+  }
+}

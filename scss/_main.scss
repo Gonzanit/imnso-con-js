@@ -1,0 +1,151 @@
+@import "variables";
+
+main{
+    background-color: $background-color;
+    
+    .carrusel {
+      grid-area: carrusel; 
+      margin: 0px 150px 100px 150px ;         
+    }
+    .principal {
+      grid-area: principal;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color:$primary-color;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      margin: 30px 100px 40px 80px;
+      border-radius: 20%;
+      
+      .video-container {
+        flex: 1;
+        margin-left: 250px;
+       video{
+        border-radius: 25%;       
+       }
+      }
+    
+      .text-container {
+        flex: 1;
+        text-align: center;
+        margin-right: 250px;
+        
+      }
+    
+      h2 {
+        color:$black;
+        font-size: 34px;
+        margin-bottom: 10px;
+        font-weight: bolder;
+    
+      }
+    
+      p {
+        color: $black;
+        font-size: 22px;
+        margin-bottom: 10px;
+      }
+    }
+    .productos {
+      grid-area: productos;
+      display: flex;    
+      flex-wrap: wrap;    
+      justify-content: space-between; 
+      text-align: center; 
+      background-color: $background-color;   
+    
+      .card {
+        margin: 30px 10px 20px 20px;  
+        background-color: #fdfdfd;
+      }
+    }
+    .formulario-diseño{
+      flex: 1;
+      background-color: #000000a4;  
+      max-width: 600px; 
+      padding: 100px 40px 100px 40px;
+      margin: 80px 250px 80px 0px;
+      text-align: center;
+     .form-label{
+      color: $white;
+      font-size: 20px;
+      font-weight: bolder;  
+    }
+    h2{
+      text-align: center;
+      color:$white;
+      font-size: 45px;
+      margin-bottom: 60px;
+    }
+    }
+    .video-formulario{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+     .botones{
+      .btn-success {
+        @include boton-estilos(#2075f5ec, #00327cad, #00327cad);
+      }
+    .btn-danger {
+      @include boton-estilos(#c74b4bd0, #580009, #580009);
+    }
+}
+    
+      .video-sticker{
+        flex: 1;    
+        video{
+          height: 600px;
+          width: 450px;
+          border-radius: 15%;
+          margin-left: 250px;      
+        }
+        
+      }
+    
+    }
+    
+    .sobrenosotros{
+      background-color: #fdfdfdd7;    
+      padding: 150px 40px 150px 40px;
+      margin: 0 auto;
+      text-align: center;
+      font-size: 1.5rem;
+      h1{
+        padding-bottom: 40px;
+      }
+    }
+    
+    .contacto{
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: rgba(0, 0, 0, 0.705);
+      padding: 180px 90px 180px 90px;
+      text-align: center;
+      h2{
+      color: #fdfdfd;
+      font-size: 3rem;
+      padding-bottom: 60px;
+      }  
+      
+      .botones{
+        .btn-success {
+          @include boton-estilos(#2075f5ec, #00327cad, #00327cad);
+        }
+      .btn-danger {
+        @include boton-estilos(#c74b4bd0, #580009, #580009);
+      }
+    }
+  }  
+    
+    .stickers{
+      
+      color: #fdfdfd;
+      background-color: #000000bd;
+      text-align: center;
+      margin: 0 auto;
+      max-width: 400px;
+    }
+  }
+
+
